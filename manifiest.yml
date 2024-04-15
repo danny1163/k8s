@@ -1,19 +1,19 @@
 apiVersion: v1
 kind: Pod 
 metadata:
-    name : my-prod
+    name : danny
     labels: 
       env: UAT-env
       app: my-pod
     namespace: uat 
 spec: 
   containers: 
-  - name: my-prod
+  - name: danny
     image: httpd
     ports: 
      -  name: http
         containerPort: 80
-  - name: my-prod
+  - name: danny
     image: tomcat
     ports: 
      -  name: http
