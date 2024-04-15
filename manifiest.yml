@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod 
+metadata:
+    name : my-pod
+    labels: 
+      env: UAT-env
+      app: my-pod
+    namespace: prod 
+spec: 
+  containers: 
+  - name: my-pod
+    image: nginx
+    ports: 
+     -  name: http
+        containerPort: 80
