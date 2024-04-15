@@ -5,11 +5,16 @@ metadata:
     labels: 
       env: UAT-env
       app: my-pod
-    namespace: prod 
+    namespace: uat 
 spec: 
   containers: 
   - name: my-pod
-    image: nginx
+    image: httpd
     ports: 
      -  name: http
         containerPort: 80
+  - name: my-pod
+    image: tomcat
+    ports: 
+     -  name: http
+        containerPort: 80      
