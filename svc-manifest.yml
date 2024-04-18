@@ -29,7 +29,7 @@ metadata:
   labels:
     env: uat-env
     app: eb-ms-app 
-  namespace: uat #<ns-name>
+  #namespace: uat #<ns-name>
 spec:
   type: ClusterIP
   selector:
