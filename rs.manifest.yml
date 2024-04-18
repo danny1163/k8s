@@ -1,7 +1,7 @@
 # Diffrence between rc & replicaset
 # so there is no major diffrence will copy the rc file --> rs.yml
 
-apiVersion: apps/V1
+apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
   name: bgmi-ms-app
