@@ -4,7 +4,7 @@
   # 2. Rolling update  --> update in sprint by sprint not at once
 # Here ReplicaSet is enwrapped into deployment like, containers wrapped --> into pod 
 # ReplicatSet managed the deployment, here i am copyin the whole rs-manifest.yml file into deployment-manifest.yml
-apiVersion: apps/V1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: web-eb-ms-deployment
