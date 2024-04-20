@@ -11,11 +11,11 @@ spec:
   replicas: 4
   selector:
     matchLabels:
-      app: art-ms-app
+      app: kart-ms-app   # Corrected label to match the template labels
   template:
     metadata:
       labels:
-        app: kart-ms-app
+        app: kart-ms-app  # Label that matches the selector
     spec:
       containers:
         - name: mariadb-kart-ms-app-container
@@ -23,7 +23,7 @@ spec:
           ports:
             - name: db
               containerPort: 3306
-          env:  # set mariadb password for root
+          env:  
             - name: MARIADB_ROOT_PASSWORD
               value: redhat
 
