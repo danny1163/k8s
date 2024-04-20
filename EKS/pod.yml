@@ -13,8 +13,8 @@ spec:
       ports:
         - name: http
           containerPort: 80
-    # - name: eks-ms-tomcat-instance
-    #   image: tomcat
-    #   ports:
-    #     - name: java
-    #       containerPort: 8080
+    - name: eks-ms-tomcat-instance
+      image: tomcat
+      ports:
+        - name: java
+          containerPort: 8080
