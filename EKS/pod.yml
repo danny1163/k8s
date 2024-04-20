@@ -1,20 +1,20 @@
 apiVersion: v1
 kind: Pod
 metadata: 
-    name: eb-ms-pod
+    name: eks-ms-pod
     labels: 
       env: uat-env
-      app: eb-ms-app
+      app: eks-ms-app
     namespace: uat
 spec: 
   containers:
-    - name: eb-ms-nginx-instance
+    - name: eks-ms-nginx-instance
       image: nginx
       ports:
         - name: http
           containerPort: 80
-    - name: eb-ms-tomcat-instance
-      image: tomcat
-      ports:
-        - name: java
-          containerPort: 8080
+    # - name: eks-ms-tomcat-instance
+    #   image: tomcat
+    #   ports:
+    #     - name: java
+    #       containerPort: 8080
