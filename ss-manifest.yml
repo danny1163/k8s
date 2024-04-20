@@ -9,6 +9,9 @@ metadata:
     app: kart-ms-app
 spec:
   replicas: 4
+  selector:
+    matchLabels:
+      app: art-ms-app
   template:
     metadata:
       labels:
